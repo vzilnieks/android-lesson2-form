@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_form_size"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:text="@string/first_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstName"
+        android:textSize="@dimen/text_form_size"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_form_size"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:text="@string/last_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastName"
+        android:textSize="@dimen/text_form_size"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_form_size"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:text="@string/age"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:textSize="@dimen/text_form_size"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:inputType="number" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_form_size"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:text="@string/day_of_week"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:id="@+id/radioGroup"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="@string/mon"
+            android:id="@+id/radioButton1"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="@string/wed"
+            android:id="@+id/radioButton2"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="@string/fri"
+            android:id="@+id/radioButton3"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/checkBox"
+        android:text="@string/agree"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:layout_marginTop="@dimen/form_margin_top"
+        android:layout_height="wrap_content" />
+</LinearLayout>
